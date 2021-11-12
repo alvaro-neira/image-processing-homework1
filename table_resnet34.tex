@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{amsmath}
+\begin{document}
+\begin{tabular}{ |c|c|c|  }
+ \hline
+layer name&output size&ResNet-34\\
+ \hline
+ conv1   & 112\times112    &7\times7, 64, stride 2\\
+ \hline
+\multirow{2}{*}{conv2\_x} & \multirow{2}{*}{56\times56} & 3x3 max pool, stride 2   \\
+\cline{3-3}
+ &&\begin{bmatrix}
+3 \times 3, 64\\
+3 \times 3, 64
+\end{bmatrix}
+\times 3 \\
+\hline
+conv3\_x & 28\times28 &
+ \begin{bmatrix}
+3 \times 3, 128\\
+3 \times 3, 128
+\end{bmatrix}
+\times 4 \\
+\hline
+conv4\_x & 14\times14 &
+ \begin{bmatrix}
+3 \times 3, 256\\
+3 \times 3, 256
+\end{bmatrix}
+\times 6 \\
+\hline
+conv5\_x & 7\times7 &
+ \begin{bmatrix}
+3 \times 3, 512\\
+3 \times 3, 512
+\end{bmatrix}
+\times 3 \\
+\hline
+ & 1\times1 &
+average pool, 1000-d fc, softmax \\
+
+\hline
+\multicolumn{2}{|c|}{FLOPs} & 3.6\times10^9\\
+\hline
+\end{tabular}
+\end{document}
