@@ -6,4 +6,5 @@
 /content/convnet2/data/test_images/crab/082_00125929.jpg
 /content/convnet2/data/test_images/elephant/103_00125872.jpg
 /content/convnet2/data/test_images/giraffe/129_00126181.jpg
+/content/convnet2/data/test_images/camel/054_00120317.jpg
 
