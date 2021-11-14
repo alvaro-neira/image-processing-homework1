@@ -1,0 +1,13 @@
+0->'sheep'
+1->'bear'
+2->'bee'
+3->'cat'
+4->'camel'
+5->'cow'
+6->'crab'
+7->'crocodile'
+8->'duck'
+9->'elephant'
+10->'dog'
+11->'giraffe'
+

@@ -6,3 +6,5 @@ SBIR=Sketch based image retrieval
 use process_fun = imgproc.process_sketch in train_simple.py line 86
 usar el ssearch.py que viene en convnet2
 
+Poner que el crab funciona como el ajo
+
